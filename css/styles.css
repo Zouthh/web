@@ -83,7 +83,7 @@ body {
     background-color: #f0f0f0;
     border-radius: 10px;
     transition: transform 0.2s, box-shadow 0.2s;
-    color: inherit; /* Asegura que el texto herede el color adecuado */
+    color: inherit; 
 }
 
 .career-card img {
@@ -106,22 +106,21 @@ body {
 .career-card:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: #e0e0e0; /* Cambia el color de fondo al pasar el mouse */
+    background-color: #e0e0e0;
 }
 
-/* Estilos para el botón de "CARRERA" más pequeño y redondeado */
+
 .dropdown-btn {
     background-color: #5eb95e;
     color: white;
-    padding: 10px 20px;  /* Botón más pequeño con menos padding */
-    font-size: 14px;     /* Tamaño de fuente más pequeño */
+    padding: 10px 20px;  
+    font-size: 14px;     
     border: none;
     cursor: pointer;
-    border-radius: 30px; /* Bordes redondeados */
+    border-radius: 30px; 
     transition: background-color 0.3s ease;
 }
 
-/* Contenido del menú desplegable (inicialmente oculto) */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -144,12 +143,12 @@ body {
     background-color: #ddd;
 }
 
-/* Mostrar el menú desplegable cuando se pasa el mouse por encima */
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Cambia el color del botón cuando el menú está desplegado */
+
 .dropdown:hover .dropdown-btn {
     background-color: #4e9e4e;
 }
