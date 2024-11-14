@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script>
+        function buscar() {
+            const input = document.querySelector('.search-bar input').value.toLowerCase();
+            let url = '';
+
+            if (input.includes('ciencia de datos') || input.includes('datos')) {
+                url = 'ciencia_datos.html';
+            } else if (input.includes('telecomunicaciones')) {
+                url = 'telecomunicaciones.html';
+            } else if (input.includes('mecatronica') || input.includes('mecatrónica')) {
+                url = 'mecatronica.html';
+            } else {
+                alert('Resultado no encontrado');
+                return;
+            }
+
+            window.location.href = url;
+        }
+    </script>
 </head>
 <body>
 
@@ -27,7 +46,7 @@
             <h1>Biblioteca</h1>
             <div class="search-bar">
                 <input type="text" placeholder="Buscar">
-                <button>🔍</button>
+                <button onclick="buscar()">🔍</button>
             </div>
         </div>
         <img src="images/sosa.jpg" alt="Campus" class="hero-image">
